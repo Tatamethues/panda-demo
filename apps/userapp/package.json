@@ -1,0 +1,31 @@
+{
+	"name": "userapp",
+	"type": "module",
+	"scripts": {
+		"prepare": "panda codegen",
+		"dev": "vinxi dev",
+		"build": "vinxi build",
+		"start": "vinxi start"
+	},
+	"dependencies": {
+		"@solidjs/meta": "^0.29.3",
+		"@solidjs/router": "^0.12.4",
+		"@solidjs/start": "^0.5.10",
+		"@repo/style": "workspace:*",
+		"@repo/ui": "workspace:*",
+		"solid-js": "^1.8.15",
+		"vinxi": "^0.3.3"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"devDependencies": {
+		"@pandacss/dev": "^0.32.1",
+		"@pandacss/eslint-plugin": "^0.1.0",
+		"@repo/eslint-config": "workspace:*",
+		"autoprefixer": "^10.4.17",
+		"eslint": "^8.57.0",
+		"eslint-plugin-tailwindcss": "^3.14.3",
+		"postcss": "^8.4.35"
+	}
+}
