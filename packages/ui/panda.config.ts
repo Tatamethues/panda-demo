@@ -1,21 +1,13 @@
 import { defineConfig } from "@pandacss/dev";
+import { defaultConfig, withoutOutdirPlugin } from "@repo/preset";
 
 export default defineConfig({
-	// Whether to use css reset
-	preflight: true,
+	...defaultConfig,
+	plugins: [withoutOutdirPlugin],
 
 	// Where to look for your css declarations
-	include: ["./src/**/*.{js,jsx,ts,tsx}"],
-
-	// Files to exclude
-	exclude: [],
-
-	// Useful for theme customization
-	theme: {
-		extend: {},
-	},
-	importMap: "@repo/style",
-
-	// The output directory for your css system
-	outdir: "../style",
+	include: [
+		"./src/**/*.{js,jsx,ts,tsx}",
+		"./node_modules/@repo/ui/dist/panda.buildinfo.json",
+	],
 });

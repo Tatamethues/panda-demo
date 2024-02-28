@@ -8,11 +8,11 @@
 		"start": "vinxi start"
 	},
 	"dependencies": {
+		"@repo/style": "workspace:*",
+		"@repo/ui": "workspace:*",
 		"@solidjs/meta": "^0.29.3",
 		"@solidjs/router": "^0.12.4",
 		"@solidjs/start": "^0.5.10",
-		"@repo/style": "workspace:*",
-		"@repo/ui": "workspace:*",
 		"solid-js": "^1.8.15",
 		"vinxi": "^0.3.3"
 	},
@@ -23,6 +23,7 @@
 		"@pandacss/dev": "^0.32.1",
 		"@pandacss/eslint-plugin": "^0.1.0",
 		"@repo/eslint-config": "workspace:*",
+		"@repo/preset": "workspace:^",
 		"autoprefixer": "^10.4.17",
 		"eslint": "^8.57.0",
 		"eslint-plugin-tailwindcss": "^3.14.3",
