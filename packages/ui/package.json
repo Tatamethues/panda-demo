@@ -11,7 +11,7 @@
 	},
 	"scripts": {
 		"lint": "eslint . --max-warnings 0",
-		"ship": "pnpm panda ship -o dist/panda.buildinfo.json"
+		"dev": "panda ship -w -o dist/panda.buildinfo.json"
 	},
 	"peerDependencies": {
 		"solid-js": "^1.8.15"
